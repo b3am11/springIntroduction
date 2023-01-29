@@ -8,11 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service //스프링이 올라올 떄 스프링이 멤버 서비스에 등록해준다.
 public class MemberService { //컨트롤 + 시프르 + t 누르면 테스트 생성 가능
     private final MemberRepository memberRepository;
-
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
