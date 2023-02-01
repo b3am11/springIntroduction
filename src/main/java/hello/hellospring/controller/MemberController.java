@@ -26,6 +26,7 @@ public class MemberController {
     //MemberService에다가 연결을 시켜준다.(의존관계 주입 중 생성자 주입)
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     @GetMapping("/members/new") //조회할 때 주로 쓴다.
